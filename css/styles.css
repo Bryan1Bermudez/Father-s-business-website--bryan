@@ -4,26 +4,27 @@
    ========================================================================= */
 
 :root {
-  --bg: #f7f2ea;
-  --bg-alt: #efe6d9;
-  --surface: #fffaf3;
-  --ink: #2a1f17;
-  --muted: #6d5d50;
-  --line: #e0d3c2;
-  --brand: #b0502a;
-  --brand-hover: #943f1f;
-  --brand-ink: #fffaf3;
+  /* Softer, lower-glare palette: warm sand instead of near-white */
+  --bg: #e6ddcf;
+  --bg-alt: #dcd0bf;
+  --surface: #eee6da;
+  --ink: #2e241c;
+  --muted: #5c4e42;
+  --line: #cbbca8;
+  --brand: #a04726;
+  --brand-hover: #87391c;
+  --brand-ink: #f6efe4;
   --accent: #3e6b58;
-  --hero-bg: linear-gradient(180deg, #f7f2ea 0%, #f0e5d5 100%);
+  --hero-bg: linear-gradient(180deg, #e6ddcf 0%, #d9ccb9 100%);
   --footer-bg: #2a1f17;
-  --footer-ink: #d6c8b8;
+  --footer-ink: #cdbfae;
 
-  --tile-1: #b0502a;
-  --tile-2: #d9895f;
-  --tile-3: #ead2b5;
-  --tile-4: #fffaf3;
+  --tile-1: #a04726;
+  --tile-2: #c97b52;
+  --tile-3: #d6bf9f;
+  --tile-4: #ece3d5;
   --tile-5: #3e6b58;
-  --grout: #e3d6c4;
+  --grout: #c7b8a2;
 
   --font-head: "Fraunces", Georgia, serif;
   --font-body: "Source Sans 3", system-ui, sans-serif;
@@ -32,7 +33,7 @@
   --head-spacing: -0.01em;
   --radius: 6px;
   --radius-small: 4px;
-  --shadow: 0 1px 0 #e0d3c2, 0 10px 30px rgb(42 31 23 / 0.06);
+  --shadow: 0 1px 0 #cbbca8, 0 10px 30px rgb(42 31 23 / 0.08);
 }
 
 /* =========================================================================
@@ -156,7 +157,16 @@ img { max-width: 100%; display: block; }
   text-transform: var(--head-transform);
   font-size: 1.2rem;
 }
-.brand-mark { width: 30px; height: 30px; }
+.brand-mark { width: 34px; height: 34px; flex: none; }
+.brand-name { display: flex; flex-direction: column; line-height: 1.05; }
+.brand-name small {
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
 .brand-mark rect { fill: var(--brand); }
 .brand-mark rect.alt { fill: var(--tile-3); }
 
@@ -447,18 +457,18 @@ img { max-width: 100%; display: block; }
   background:
     linear-gradient(90deg, #c9c2b6 2px, transparent 2px) 0 0 / 90px 90px,
     linear-gradient(#c9c2b6 2px, transparent 2px) 0 0 / 90px 90px,
-    linear-gradient(135deg, #ede8df, #d8d0c3);
+    linear-gradient(135deg, #ddd5c8, #c9bfb0);
 }
 .ph-tile-2 {
   background:
-    conic-gradient(#3a3f45 25%, #e9e6e0 0 50%, #3a3f45 0 75%, #e9e6e0 0) 0 0 / 70px 70px;
+    conic-gradient(#3a3f45 25%, #d6d1c8 0 50%, #3a3f45 0 75%, #d6d1c8 0) 0 0 / 70px 70px;
 }
 .ph-bath {
   background:
     linear-gradient(90deg, #cfd8dc 2px, transparent 2px) 0 0 / 60px 30px,
     linear-gradient(90deg, #cfd8dc 2px, transparent 2px) 30px 15px / 60px 30px,
     linear-gradient(#cfd8dc 2px, transparent 2px) 0 0 / 60px 15px,
-    #f4f7f8;
+    #dfe3e2;
 }
 .ph-bath-2 {
   background:

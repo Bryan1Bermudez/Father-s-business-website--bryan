@@ -64,7 +64,7 @@ GitHub Pages serves the **`gh-pages`** branch. To publish changes, update `main`
 git push origin main main:gh-pages
 ```
 
-A custom domain (e.g. `bermudeztile.com`, about $10–20 a year) can be connected later under **Settings → Pages**.
+A custom domain (e.g. `millenniumflooring.com`, about $10–20 a year) can be connected later under **Settings → Pages**.
 
 ## Still to do
 - [ ] Fill in real business info (see `CONTENT-NEEDED.md`)

@@ -3,7 +3,7 @@
 Open `index.html?todo` to see every remaining placeholder highlighted in yellow.
 
 ## ✅ Already on the site (from Jacinto's résumé)
-- Business name: **Bermudez Tile** (owner since 2003)
+- Business name: **Millennium Flooring Remodeling** (founded 2007; setting tile since 2003)
 - Owner: **Jacinto Bermudez**
 - Phone: **786-873-8233**, email: **Jacintobermudez@yahoo.es**
 - 20+ years experience, residential and commercial
@@ -15,8 +15,6 @@ Deliberately **not** on the site: his references' names and phone numbers (priva
 and the names of the companies he's subcontracted for (needs their OK).
 
 ## ❓ Questions to confirm
-- [ ] **Which business name?** The résumé lists both *Bermudez Tile* (2003) and
-      *Millennium Flooring Remodeling* (2007). The site currently uses Bermudez Tile.
 - [ ] **Service area.** "South Florida" is a guess from the 786 / 954 area codes. Which cities or counties?
 - [ ] **Licensed and insured?** If yes, the license number. (The site doesn't claim it until confirmed.)
 - [ ] **Pools.** What exactly does he do: full builds, or tile, coping and decks, or repairs? Since when?
@@ -40,5 +38,5 @@ Tips: horizontal photos, good daylight, clean site, no customers' faces or house
 ## Nice to have
 - [ ] Logo (or keep the tile icon)
 - [ ] Social media links
-- [ ] Domain name (e.g. `bermudeztile.com`)
+- [ ] Domain name (e.g. `millenniumflooring.com`)
 - [ ] Spanish version of the site
