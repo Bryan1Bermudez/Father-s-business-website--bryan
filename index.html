@@ -1,0 +1,366 @@
+<!doctype html>
+<!--
+  Main site page.
+  - Text in [square brackets] (wrapped in <span class="todo">) is placeholder content
+    still waiting on real details. See CONTENT-NEEDED.md for the full checklist.
+  - Preview other design directions:  index.html?theme=rugged  or  ?theme=craftsman
+  - Highlight every placeholder:      index.html?todo
+-->
+<html lang="en" data-theme="modern">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>[Business Name] | Floor Tile, Bathroom Remodels &amp; Pools</title>
+  <meta name="description" content="Professional floor tile installation, bathroom remodeling, and pool construction in [City / Service Area]. Free estimates.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- TODO: once a design direction is chosen, trim this to just the fonts that theme uses. -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&family=Barlow:wght@400;500;600&family=Barlow+Condensed:wght@600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#top" aria-label="Home">
+        <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true">
+          <rect x="2" y="2" width="13" height="13" rx="2"/>
+          <rect x="17" y="2" width="13" height="13" rx="2" class="alt"/>
+          <rect x="2" y="17" width="13" height="13" rx="2" class="alt"/>
+          <rect x="17" y="17" width="13" height="13" rx="2"/>
+        </svg>
+        <span class="brand-name"><span class="todo">[Business Name]</span></span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav">
+        <span class="sr-only">Menu</span>
+        <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#work">Our Work</a>
+        <a href="#process">How It Works</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn btn-small">Free Estimate</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Tile &middot; Bathrooms &middot; Pools</p>
+          <h1>Craftsmanship you can stand on.</h1>
+          <p class="lead">
+            Floor tile, full bathroom remodels, and now custom pools, done by hand
+            by <span class="todo">[Owner Name]</span> with
+            <span class="todo">[X]</span>+ years of experience in
+            <span class="todo">[City / Service Area]</span>.
+          </p>
+          <div class="hero-actions">
+            <a href="#contact" class="btn">Get a Free Estimate</a>
+            <a href="tel:+10000000000" class="btn btn-ghost">Call <span class="todo">[(555) 555-5555]</span></a>
+          </div>
+          <ul class="trust">
+            <li>Licensed &amp; insured</li>
+            <li>Free, no-pressure estimates</li>
+            <li>Owner on every job</li>
+          </ul>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="mosaic">
+            <!-- 36 decorative tiles, colored in CSS -->
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+            <i></i><i></i><i></i><i></i><i></i><i></i>
+          </div>
+          <div class="hero-badge">
+            <strong><span class="todo">[X]</span>+</strong>
+            <span>years on the tools</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">What we do</p>
+          <h2>Three trades, one standard of work.</h2>
+        </header>
+
+        <div class="cards">
+          <article class="card service">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 3h8v8H3zM13 3h8v8h-8zM3 13h8v8H3zM13 13h8v8h-8z"/></svg>
+            </div>
+            <h3>Floor Tile</h3>
+            <p>Porcelain, ceramic, natural stone and large-format tile, laid flat, level and built to last.</p>
+            <ul class="checklist">
+              <li>Kitchens, living areas &amp; entryways</li>
+              <li>Subfloor prep &amp; leveling</li>
+              <li>Old floor removal</li>
+              <li>Patterns, borders &amp; inlays</li>
+            </ul>
+          </article>
+
+          <article class="card service">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12V5a2 2 0 0 1 4 0v1M2 12h20v2a6 6 0 0 1-6 6H8a6 6 0 0 1-6-6zM7 20l-1 2M17 20l1 2"/></svg>
+            </div>
+            <h3>Bathroom Remodels</h3>
+            <p>From a refreshed shower to a complete gut-and-rebuild, waterproofed properly so it stays beautiful.</p>
+            <ul class="checklist">
+              <li>Walk-in &amp; tiled showers</li>
+              <li>Tub surrounds &amp; tub-to-shower</li>
+              <li>Waterproofing systems</li>
+              <li>Vanity, niche &amp; bench details</li>
+            </ul>
+          </article>
+
+          <article class="card service is-new">
+            <span class="tag">Now offering</span>
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 16c2 0 2-1.5 4-1.5S8 16 10 16s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M2 20c2 0 2-1.5 4-1.5S8 20 10 20s2-1.5 4-1.5 2 1.5 4 1.5 2-1.5 4-1.5M8 13V5a2 2 0 0 1 4 0M14 13V5a2 2 0 0 1 4 0M8 8h6M8 11h6"/></svg>
+            </div>
+            <h3>Pools</h3>
+            <p>New pool construction, waterline tile, coping and decks, finished with the same eye for detail.</p>
+            <ul class="checklist">
+              <li>New pool builds</li>
+              <li>Waterline &amp; mosaic tile</li>
+              <li>Coping &amp; pool decks</li>
+              <li>Pool tile repair &amp; renovation</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY US ============ -->
+    <section class="section section-alt">
+      <div class="container why">
+        <header class="section-head">
+          <p class="eyebrow">Why homeowners call us</p>
+          <h2>Hard work, done right the first time.</h2>
+        </header>
+        <div class="why-grid">
+          <div class="why-item">
+            <span class="why-num">01</span>
+            <h3>Owner-operated</h3>
+            <p>You deal directly with the person doing the work, from estimate to final walkthrough.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-num">02</span>
+            <h3>Prep is everything</h3>
+            <p>Level floors, proper waterproofing, clean cuts. The parts you don't see are done right.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-num">03</span>
+            <h3>Clear pricing</h3>
+            <p>Written estimates with no surprises. You know what you're paying for before we start.</p>
+          </div>
+          <div class="why-item">
+            <span class="why-num">04</span>
+            <h3>Clean job sites</h3>
+            <p>We respect your home, protect your floors and clean up at the end of every day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <header class="section-head section-head-row">
+          <div>
+            <p class="eyebrow">Our work</p>
+            <h2>Recent projects</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filter projects">
+            <button class="filter is-active" data-filter="all">All</button>
+            <button class="filter" data-filter="tile">Floor Tile</button>
+            <button class="filter" data-filter="bath">Bathrooms</button>
+            <button class="filter" data-filter="pool">Pools</button>
+          </div>
+        </header>
+
+        <!-- TODO: replace placeholders with real photos, e.g.
+             <img src="images/kitchen-floor.jpg" alt="Large-format porcelain kitchen floor"> -->
+        <div class="gallery">
+          <figure class="shot ph-tile wide" data-cat="tile">
+            <figcaption><span class="shot-cat">Floor Tile</span><span class="todo">[Project name / location]</span></figcaption>
+          </figure>
+          <figure class="shot ph-bath" data-cat="bath">
+            <figcaption><span class="shot-cat">Bathroom</span><span class="todo">[Project name / location]</span></figcaption>
+          </figure>
+          <figure class="shot ph-pool" data-cat="pool">
+            <figcaption><span class="shot-cat">Pool</span><span class="todo">[Project name / location]</span></figcaption>
+          </figure>
+          <figure class="shot ph-bath-2 wide" data-cat="bath">
+            <figcaption><span class="shot-cat">Bathroom</span><span class="todo">[Project name / location]</span></figcaption>
+          </figure>
+          <figure class="shot ph-tile-2" data-cat="tile">
+            <figcaption><span class="shot-cat">Floor Tile</span><span class="todo">[Project name / location]</span></figcaption>
+          </figure>
+          <figure class="shot ph-pool-2 wide" data-cat="pool">
+            <figcaption><span class="shot-cat">Pool</span><span class="todo">[Project name / location]</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS ============ -->
+    <section class="section section-alt" id="process">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">How it works</p>
+          <h2>From first call to final walkthrough</h2>
+        </header>
+        <ol class="steps">
+          <li>
+            <h3>Call or send a message</h3>
+            <p>Tell us about your project. We'll set up a time to come take a look.</p>
+          </li>
+          <li>
+            <h3>Free on-site estimate</h3>
+            <p>We measure, talk through materials and options, and give you a written quote.</p>
+          </li>
+          <li>
+            <h3>The build</h3>
+            <p>We show up when we say, keep you updated, and keep the site clean.</p>
+          </li>
+          <li>
+            <h3>Final walkthrough</h3>
+            <p>We don't call it done until you're happy with every line and corner.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container about">
+        <div class="about-photo" aria-label="Photo of the owner (coming soon)">
+          <span>Owner photo<br>coming soon</span>
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2>Meet <span class="todo">[Owner Name]</span></h2>
+          <p>
+            <span class="todo">[A few sentences in his own words: how he got started in construction,
+            how long he's been laying tile, what he's proud of, and why he started doing pools.]</span>
+          </p>
+          <p>
+            <span class="todo">[Something personal: family business, hometown, languages spoken
+            (e.g. "Hablamos español"), etc.]</span>
+          </p>
+          <ul class="facts">
+            <li><strong><span class="todo">[X]</span>+</strong> years experience</li>
+            <li><strong><span class="todo">[X]</span>+</strong> projects completed</li>
+            <li><strong><span class="todo">[License #]</span></strong> licensed &amp; insured</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ REVIEWS ============ -->
+    <section class="section section-alt">
+      <div class="container">
+        <header class="section-head">
+          <p class="eyebrow">Reviews</p>
+          <h2>What customers say</h2>
+        </header>
+        <!-- TODO: use real reviews only (with permission), e.g. copied from Google / Facebook / Yelp. -->
+        <div class="cards reviews">
+          <blockquote class="card review">
+            <p><span class="todo">[Real customer review goes here.]</span></p>
+            <footer><span class="todo">[Customer first name]</span>, <span class="todo">[Neighborhood]</span></footer>
+          </blockquote>
+          <blockquote class="card review">
+            <p><span class="todo">[Real customer review goes here.]</span></p>
+            <footer><span class="todo">[Customer first name]</span>, <span class="todo">[Neighborhood]</span></footer>
+          </blockquote>
+          <blockquote class="card review">
+            <p><span class="todo">[Real customer review goes here.]</span></p>
+            <footer><span class="todo">[Customer first name]</span>, <span class="todo">[Neighborhood]</span></footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact-section" id="contact">
+      <div class="container contact">
+        <div class="contact-info">
+          <p class="eyebrow">Free estimate</p>
+          <h2>Let's talk about your project.</h2>
+          <p>Send a few details and we'll get back to you within <span class="todo">[1 business day]</span>.</p>
+          <dl class="contact-list">
+            <div><dt>Phone</dt><dd><a href="tel:+10000000000"><span class="todo">[(555) 555-5555]</span></a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:hello@example.com"><span class="todo">[email@business.com]</span></a></dd></div>
+            <div><dt>Service area</dt><dd><span class="todo">[City, nearby cities, County]</span></dd></div>
+            <div><dt>Hours</dt><dd><span class="todo">[Mon–Sat, 7am–6pm]</span></dd></div>
+          </dl>
+        </div>
+
+        <!-- TODO: connect to a form service (e.g. Formspree / Netlify Forms) by setting action="" -->
+        <form class="card contact-form" action="" method="post" novalidate>
+          <div class="field">
+            <label for="f-name">Name</label>
+            <input id="f-name" name="name" autocomplete="name" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-phone">Phone</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="field">
+              <label for="f-email">Email</label>
+              <input id="f-email" name="email" type="email" autocomplete="email">
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-service">What do you need?</label>
+            <select id="f-service" name="service">
+              <option>Floor tile</option>
+              <option>Bathroom remodel</option>
+              <option>Pool</option>
+              <option>Something else</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="f-msg">Project details</label>
+            <textarea id="f-msg" name="message" rows="4" placeholder="Room size, timeline, anything we should know"></textarea>
+          </div>
+          <button class="btn btn-block" type="submit">Request my free estimate</button>
+          <p class="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <strong><span class="todo">[Business Name]</span></strong>
+        <p>Floor tile &middot; Bathroom remodels &middot; Pools<br><span class="todo">[City, State]</span></p>
+      </div>
+      <p class="fine">&copy; <span data-year></span> <span class="todo">[Business Name]</span>. Licensed &amp; insured. <span class="todo">[License #]</span></p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
