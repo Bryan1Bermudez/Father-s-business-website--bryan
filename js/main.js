@@ -1,13 +1,6 @@
 // Small, dependency-free behaviour for the site.
 (function () {
   const params = new URLSearchParams(window.location.search);
-  const root = document.documentElement;
-
-  // Design preview: index.html?theme=modern | rugged | craftsman
-  const theme = params.get("theme");
-  if (["modern", "rugged", "craftsman"].includes(theme)) {
-    root.dataset.theme = theme;
-  }
 
   // Highlight placeholder text still waiting on real details: index.html?todo
   if (params.has("todo")) {

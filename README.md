@@ -2,7 +2,7 @@
 
 Website for a family construction business specializing in **floor tile**, **bathroom remodels**, and (new) **pools**.
 
-Status: **early draft.** The layout and design are in place, but the business details (name, phone, photos, reviews) are still placeholders. See [`CONTENT-NEEDED.md`](CONTENT-NEEDED.md).
+Status: **draft.** Design chosen and basic business info filled in. Photos, reviews, service area and a few details are still placeholders. See [`CONTENT-NEEDED.md`](CONTENT-NEEDED.md).
 
 ## How it's built
 
@@ -10,10 +10,10 @@ Plain HTML, CSS and JavaScript. No build tools and nothing to install, so it's e
 
 ```
 index.html          the whole site (one page with sections)
-css/styles.css      all styling, including the 3 design themes
-js/main.js          mobile menu, gallery filter, contact form, theme preview
+css/styles.css      all styling (colors and fonts are variables at the top)
+js/main.js          mobile menu, gallery filter, contact form
 images/             put real project photos here
-mockups/            screenshots of the 3 design directions
+mockups/            screenshots of the design
 CONTENT-NEEDED.md   checklist of info to collect
 ```
 
@@ -31,20 +31,14 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000.
 
-### Preview tricks
-| URL | What it does |
-| --- | --- |
-| `index.html?theme=modern` | Clean teal and white design (default) |
-| `index.html?theme=rugged` | Dark, bold, construction orange |
-| `index.html?theme=craftsman` | Warm terracotta, serif headings |
-| `index.html?todo` | Highlights every placeholder still waiting on real info |
+### Preview trick
+Add `?todo` to the address (`index.html?todo`) to highlight every placeholder still waiting on real info.
 
-## Design directions
+## Design
 
-Screenshots are in [`mockups/`](mockups/). Once one is picked:
-1. Set `data-theme="..."` on the `<html>` tag in `index.html`.
-2. Delete the other two theme blocks at the top of `css/styles.css`.
-3. Trim the Google Fonts link in `index.html` to just that theme's fonts.
+The **Craftsman** direction was chosen: warm terracotta, cream and deep green, with Fraunces
+(serif) headings and Source Sans 3 body text. To tweak colors or fonts, edit the variables in
+the `:root` block at the top of `css/styles.css`. Screenshots are in [`mockups/`](mockups/).
 
 ## Adding real photos
 
@@ -69,7 +63,7 @@ placeholder in the gallery:
 
 ## Still to do
 - [ ] Fill in real business info (see `CONTENT-NEEDED.md`)
-- [ ] Choose a design direction
+- [x] Choose a design direction (Craftsman)
 - [ ] Add real project photos and an owner photo
 - [ ] Connect the contact form to an email service (e.g. [Formspree](https://formspree.io), free tier)
 - [ ] Logo (or keep the tile icon)
