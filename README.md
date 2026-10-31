@@ -54,12 +54,17 @@ placeholder in the gallery:
 
 `data-cat` must be `tile`, `bath`, or `pool` so the filter buttons work.
 
-## Publishing (free) with GitHub Pages
+## Live site (GitHub Pages)
 
-1. On GitHub, go to the repo's **Settings → Pages**.
-2. Under "Build and deployment", choose **Deploy from a branch**, branch `main`, folder `/ (root)`.
-3. The site will be live at `https://<username>.github.io/<repo-name>/` in a minute or two.
-4. Later, a custom domain (e.g. `yourbusiness.com`, about $10–20 a year) can be connected in the same settings page.
+**https://bryan1bermudez.github.io/Father-s-business-website--bryan/**
+
+GitHub Pages serves the **`gh-pages`** branch. To publish changes, update `main` and then push it to `gh-pages`:
+
+```bash
+git push origin main main:gh-pages
+```
+
+A custom domain (e.g. `bermudeztile.com`, about $10–20 a year) can be connected later under **Settings → Pages**.
 
 ## Still to do
 - [ ] Fill in real business info (see `CONTENT-NEEDED.md`)
